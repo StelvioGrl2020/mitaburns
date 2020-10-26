@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -137,3 +138,144 @@
 </style>
 </body>
 </html>
+=======
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+<style>
+    div {      
+        display: inline-block;        
+        border: 1px solid black;          
+        width: 50px;
+        height: 50px;
+        height: 50px;
+        margin: 10px;
+        text-align: center;      
+        }
+         #box1{
+         background-color: orange; color: white;
+        }
+        .redBox {
+        border:1px dashed red;
+        }  
+        div span {               
+        color: aquamarine;
+        border: black
+        } 
+        h3, h4 {
+          color: crimson;
+          font-weight: 800;
+          text-decoration: underline;  
+            }        
+            [data-test] {
+            font-size: 1.5rem;
+            }  
+        @keyframes boxAnimation {
+            0% {background-color: blueviolet;}
+            25% {background-color: darkorange;}
+            50% {background-color: deepskyblue;}
+            100% {background-color: firebrick;}
+        }
+        #box2:hover {
+            animation-name: boxAnimation;
+            animation-duration:  3s;
+        }
+       
+</style>        
+<!DOCTYPE html>
+<html lang="en">
+        <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+     <title>Document</title>
+  
+        </head>
+        <body>
+        <h2>Header A</h2>
+        <ul>                           
+            <li>A</li>
+            <li>B</li>
+            <li>C</li>
+        </ul>
+         <input type="checkbox">OptionA</input>
+        <input type="checkbox">OptionB</input>
+        </body>
+</html>
+        <style>
+        li:nth-child(2) {font-size: 1.4rem;
+        }
+        input:checked{ visibility: hidden;
+        }
+        li:last-child::before { content: 'The option - ';
+        background-color: yellow;
+        }
+        li:last-child::after {
+            font-weight: bold;
+            content: ' is special.'            
+        }        
+        h2:hover {
+            color: red;
+            cursor: pointer;
+        }
+    </style> 
+<!DOCTYPE html>
+<html lang="en">
+        <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+        <title>Document</title>
+     <style>
+         #box1:hover 
+         { 
+        background-color: gold
+        -ms-transform; rotate: 360deg; /* IE 9 */
+        -webkit-transform: rotate(360); /*Safari 3-8 */
+        transform: rotate(360deg);          
+        }   
+        .box {
+         margin-top: 30px;
+         width: 70px;
+         height: 70px;
+         border: 1px solid black;
+         background-color: cadetblue;
+          -webkit-transition: all 1s ease;
+         transition: all 1s ease;
+          }
+        </style>
+         </head>
+         <body>
+        <div class="box" id="box1"></div>
+        <div class="box" id="box2"></div>
+         </body>
+    </style>
+    </html>   
+
+    
+
+    <title>Document</title>
+    </head>
+      <body>
+        <div>1</div>
+        <div id="box1">2</div>  
+        <div class="redBox">3</div>
+        <div><span>5</span></div>
+        <div class="redBox">6</div>
+        <nav>
+     <ul>
+         <li>A</li>
+         <li data-test="testB">B</li>
+         <li data-test="testC">C</li>
+        </ul>
+  </nav>
+  <h3>Header 3</h3>
+  <h4>Header 4</h4>
+</style>
+</body>
+</html>
+
